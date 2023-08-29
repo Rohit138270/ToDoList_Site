@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+
+  @import url('https://fonts.googleapis.com/css2?family=Margarine&family=Supermercado+One&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Margarine', cursive;
+    
+}
+.maindiv{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    background: #dad7cd;
+
+}
+.centerdiv{
+   width: 25%;
+   height: 80vh;
+   background: #ADC4CE;
+   box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
+   border-radius: 10px;
+}
+h1{
+    color: white;
+    background-color: #6a92a5;
+    padding: 5px 0 5px 0;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+
+}
+input{
+    text-align: center;
+    background: transparent;
+    height: 30px;
+    top: 10px;
+    outline: none;
+    width: 50%;
+    border: none;
+    border-bottom: 2px solid #6a92a5;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+    
+}
+::placeholder{
+    color: #1c4457;
+}
+button{
+    margin-left: 30px;
+    padding: 10px;
+    width: 5vh;
+    border-radius: 12px;
+    border: none;
+    background-color: #6a92a5;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(74, 228, 74);
+    transition: .4s ease;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.todostyle{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #1c4457;
+
+}
+.todostyle .btnstyle{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6a92a5;
+    border-radius: 8px;
+    margin: 0 25px 0 35px;
+    color: #f4f4f4;
+    box-shadow: 5px 5px 10px -5px rgba(0, 0, 0, 0.3);
+}
+.todostyle .btnstyle:hover{
+    background-color: rgb(228, 74, 74);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media (max-width: 768px) {
+    .centerdiv{
+        width: 80%;
+    }
+
+    .todostyle .btnstyle{
+        margin: 0 15px 0 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+        margin-left: 5px;
+        min-height: 40px;
+        width: 40px;
+        font-size: 30px;
+    }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
